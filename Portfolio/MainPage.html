@@ -7,17 +7,18 @@
 		body{
 			background-color: #81ECDC
 		}
+		
 		.vertical-bar{
 			width: 300px;
 			height: 700px;
-	    	border: solid;
-	    	position: fixed;
-	    	text-align: center;
-	    	background-color: #BEF8EF
+	    	        border: solid;
+	    	        position: fixed;
+	    	        text-align: center;
+	    	        background-color: #BEF8EF
 		}
 
 		.vertical-bar a{
-			padding: 25px;
+			padding: 30px;
 			display: block;
 			text-decoration: none;
 
@@ -29,86 +30,74 @@
 
 		}
 
-		.active{
-			background: black ;
-			color: white;
-		}
-
+		
 		img{
 			border-radius: 50%;
 			width: 100px;
 			height: 100px;
 		}
-
-		.main{
-			float: right;
-			padding-right:50%;
-			padding-top: 15%;
-		}
-
+		
 		#home{
-			/*position: static;*/
 			width: 500px;
 			height: 500px;
 			padding-left: 40%;
 			padding-top: 20%;
 		}
 
+		#home img{
+			width: 200px;
+			height: 200px;
+			border-radius: 5px;
+		}
+
 		#about{
 			width: 500px;
-			height: 500px;
+			height: 700px;
 			padding-left: 40%; 
 			padding-top: 17%;
 		}
 
 		#education{
 			width: 500px;
-			height: 300px;
-			padding-left: 39%;
+			height:700px;
+			padding-left: 40%;
 			padding-top: 11%;
-			
 		}
 
 		#contact{
 			width: 500px;
-			height: 500px;
-			padding-left: 40%;
-			padding-top: 30%;
-			padding-top: 20%;
-			
-			
+			height: 700px;
+			padding-left: 40%;	
 		}
 
-		#education{
+		#gallery{
 			width: 500px;
-			height: 500px;
-
-
-
+			height: 750px;
+			padding-left: 40%;	
 		}
 
-		/*#facebooklink{
-			background-color: blue;
-			text-align: center;
-			top:  80%;
+		#gallery img{
+			width: 150px;
+			height: 150px;
+			border-radius: 5px;
 		}
 
-		#whatsappData {
+		#facebooklink{
+			padding-left: 30%;
 			
-			text-align: center;
-			padding-left: 120px;
-			padding-top: 20px;
-			background-color: yellow;
 		}
-		#whatsapp {
-			
-			
-			background-color: green;
+
+		#whatsapplink{
+			padding-left: 30%;
 		}
-*/
+
+		#twitterlink{
+			padding-left: 30%;
+		}
+
 		
 
-		
+
 	</style>
 </head>
 <body>
@@ -117,12 +106,11 @@
      <div class="vertical-bar">
      	<img src="img/salman.jpg">
      	<h1>SYED SALMAN</h1>
-     	<a href="#home" class="active">HOME</a>
+     	<h2>05/08/2002</h2>
+     	<a href="#home">HOME</a>
      	<a href="#about"> ABOUT</a>
      	<a href="#education"> EDUCATION</a>
      	<a href="#contact"> CONTACT</a>
-     	<a href="#work"> WORK</a>
-     	<a href="#services"> SERVICES</a>
      	<a href="#gallery"> GALLERY</a>
 
 
@@ -131,7 +119,8 @@
     <!-- HOME -->
     <div id="home">
     	<h1>FRONT-END</br> DEVELOPER</h1>
-    	<button>portfolio</button>
+    	<img src="specs.png" width="50%">
+    	
     </div>
 
 
@@ -153,12 +142,65 @@
 
 
     <div id="education">
-    	<h1>LOREM IPSUM</h1>
-    	<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+    	<h1>EDUCATION</h1>
+    	<ul>
+    		<pre>
+    			<h2>STUDIED 10TH</h2>
 
-    	<h1>LOREM IPSUM</h1>
-    	<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+    			<h2>STUDIED 12TH</h2>
+
+    			<h2> Learning </br>HTML AND CSS</h2>
+    		</pre>
+    	</ul>
+    </div>
+
+    <div id="contact">
+    	<h1>CONTACT</h1>
+    	<div id="facebook">
+    		<img src="facebook.png">
+    		<div id="facebooklink">
+    			<a href="https://www.facebook.com">MY FACEBOOK ID</a>
+    		</div>
+    	</div>
+
+    	<div id="whatsapp">
+    		<img src="whatsapp.png">
+    		<div id="whatsapplink">
+    			<a href="https://www.whatsapp.com">MY WHATSAPP NO</a>
+    		</div>
+    	</div>
+
+    	<div id="twitter">
+    		<img src="twitter.png">
+    		<div id="twitterlink">
+    			<a href="https://www.twitter.com">MY TWITTER ID</a>
+    		</div>
+    	</div>
 
     </div>
+
+    <div id="gallery">
+    	<h1>GALLERY</h1>
+    	<div>
+    	<img src="chameleon.jpg">
+    	<h2>THE CHAMELEON</h2>
+    	</div>
+
+    	<div>
+    		<img src="train.jpg">
+    	<h2>ELECTRIC TRAIN</h2>
+    	</div>
+     
+    	<div id="swing">
+    		<img src="swing.jpg">
+    	<h2>SWING</h2>
+    	</div>
+
+
+    </div>
+
+    
+
+   
 </body>
 </html>
